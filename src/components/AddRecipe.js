@@ -10,6 +10,13 @@ function AddRecipe(props) {
   const handleImageSuccess = (imageUrl) => {
     setFileUrl(imageUrl);
   };
+
+  const [recipe, setRecipe] = useState([]);
+
+  const [title, setTitle] = useState("");
+  const [category, setCategory] = useState("");
+  const [description, setDescription] = useState("");
+  const [ingredients, setIngredients] = useState("");
   return <div>AddRecipe</div>;
 }
 
