@@ -1,0 +1,257 @@
+@font-face {
+  font-family: "Kaushan Script";
+  src: url(./assets/KaushanScript-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Ysabeau SC";
+  src: url(./assets/Ysabeau_SC/YsabeauSC-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url(./assets/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: "Courgette";
+  src: url(./assets/Courgette-Regular.ttf);
+}
+
+:root {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+
+  background-color: #513e32;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  max-height: 100%;
+}
+
+.menu {
+  border: 4px double #ece3e3;
+  margin: 50px 100px;
+  max-height: 100%;
+}
+
+/* Start of title */
+
+.title-container {
+  width: 1000px;
+  margin: auto;
+}
+
+.title-1 {
+  font-family: "Kaushan Script";
+  color: #ff6f20;
+  letter-spacing: 1.5px;
+  font-size: 100px;
+  text-align: center;
+}
+
+.title-2 {
+  font-family: "Ysabeau SC";
+  font-size: 30px;
+  color: white;
+
+  width: 30px;
+  position: relative;
+  left: 640px;
+  top: -100px;
+}
+
+/* End of Title */
+
+.division {
+  margin: auto;
+  width: 700px;
+  height: 3px;
+  background-color: #ece3e3;
+  position: relative;
+  top: -100px;
+}
+
+/* Start of Search and Filter */
+
+.search-filter-container {
+  margin: auto;
+  width: 500px;
+  position: relative;
+  top: 20px;
+}
+
+.search {
+  width: 500px;
+  position: relative;
+  left: 135px;
+}
+
+.search-input {
+  font-size: 18px;
+}
+
+.search-btn {
+  font-size: 14px;
+}
+
+.filter {
+  margin-top: 15px;
+  width: 800px;
+  position: relative;
+  left: -100px;
+}
+
+.filter-btns {
+  width: 130px;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+
+  background-color: #513e32;
+  border-radius: 20px;
+  border: 2px solid #f49f49;
+
+  font-size: 12px;
+  color: #f49f49;
+}
+
+.filter-btns:hover {
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+.active {
+  border: 2px solid white;
+  color: white;
+}
+
+.add-btn {
+  width: 150px;
+  padding: 10px;
+  position: absolute;
+  top: 90px;
+  left: 175px;
+
+  font-size: 16px;
+  border: 2px solid #f49f49;
+  background-color: #f49f49;
+  border-radius: 20px;
+}
+
+.add-btn:hover {
+  background-color: #ff6f20;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Start of Content */
+
+.menu-list-container {
+  margin: 120px 100px 0px 100px;
+  max-height: 100%;
+}
+
+.recipe-container {
+  margin: 50px 0;
+  padding: 50px 0;
+  border-bottom: 3px outset #ece3e3;
+}
+
+.content {
+  position: absolute;
+  left: 700px;
+  width: 500px;
+}
+
+.title {
+  font-family: "Courgette";
+  font-weight: 700;
+  font-size: 55px;
+  color: #f49f49;
+
+  position: relative;
+  top: -310px;
+}
+
+a:link {
+  font-family: "Courgette";
+  font-weight: 700;
+  font-size: 60px;
+  color: #f49f49;
+  text-decoration: none;
+}
+
+a:visited {
+  font-family: "Courgette";
+  font-weight: 700;
+  font-size: 60px;
+  color: #f49f49;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+a:active {
+  font-family: "Courgette";
+  font-weight: 700;
+  font-size: 60px;
+  color: #f49f49;
+  text-decoration: none;
+}
+
+.description {
+  color: #ece3e3;
+  font-size: 20px;
+  font-weight: 300;
+
+  position: absolute;
+  top: -200px;
+}
+
+.buttons {
+  font-size: 18px;
+  color: white;
+
+  position: absolute;
+  left: 950px;
+}
+
+.edit-btn {
+  background-color: #f49f49;
+  border-radius: 20px;
+  padding: 5px;
+  height: 40px;
+  width: 100px;
+}
+
+.delete-btn {
+  background-color: #f49f49;
+  border-radius: 20px;
+  padding: 5px;
+  height: 40px;
+  width: 100px;
+}
+
+.edit-btn:hover {
+  background-color: #ff6f20;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #ff6f20;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* End of Content */

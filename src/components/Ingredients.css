@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url(../assets/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: "Cookie";
+  src: url(../assets/Cookie-Regular.ttf);
+}
+
+:root {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  background-color: #513e32;
+}
+
+body {
+  min-height: 100vh;
+  max-height: 100%;
+}
+
+.ingredients-container {
+  position: relative;
+  top: -100px;
+
+  padding: 50px;
+  margin: 100px;
+  max-height: 100%;
+}
+
+.heading {
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: "Cookie";
+  font-size: 80px;
+  font-weight: 500;
+  color: #ff6f20;
+}
+
+li {
+  margin-left: 100px;
+  list-style: square;
+  color: #ece3e3;
+  font-size: 22px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
