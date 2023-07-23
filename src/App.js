@@ -6,28 +6,17 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import { useState } from "react";
-import Data from "./data.json";
 import Root from "./Root";
-import AddRecipe from "./components/AddRecipe";
 import Ingredients from "./components/Ingredients";
-
-const getData = (data) => {
-  console.log(data);
-};
+import FilterAndSearch from "./components/FilterAndSearch";
 
 function App() {
-  const [recipe, setRecipe] = useState(Data);
-
   const router = createBrowserRouter(
     createRoutesFromElements(
       <>
         <Route>
           <Route path="/" element={<Root />}>
-            <Route
-              path="add-recipe"
-              element={<AddRecipe onSubmit={getData} addRecipe={setRecipe} />}
-            ></Route>
+            <Route path="filter" element={<FilterAndSearch />} />
           </Route>
           <Route path="/ingredients/:id" element={<Ingredients />} />
         </Route>

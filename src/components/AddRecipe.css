@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url(../assets/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: "Cookie";
+  src: url(../assets/Cookie-Regular.ttf);
+}
+
+:root {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+
+  background-color: #513e32;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  max-height: 100%;
+}
+
+.add-container {
+  position: relative;
+  top: -100px;
+}
+
+.heading {
+  margin-bottom: 50px;
+  text-align: center;
+  color: #ff6f20;
+}
+
+.heading-title {
+  font-size: 50px;
+  font-weight: 500;
+  font-family: "Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
+}
+
+.form-container {
+  padding: 50px;
+  margin: 50px 200px;
+  max-height: 100%;
+}
+
+.label {
+  color: #ece3e3;
+  font-size: 18px;
+}
+
+input {
+  position: relative;
+  left: 100px;
+  height: 18px;
+  padding: 5px;
+  width: 600px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#title {
+  position: relative;
+  left: 170px;
+}
+
+#category {
+  position: relative;
+  left: 120px;
+
+  height: 30px;
+  padding: 5px;
+  width: 200px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+
+  text-align: center;
+  font-size: 16px;
+}
+
+#description {
+  position: relative;
+  left: 97px;
+  text-align: left;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+
+  width: 600px;
+  height: 200px;
+}
+
+.image-upload-container {
+  position: relative;
+  top: 50px;
+  color: #ece3e3;
+
+  height: 100px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+
+input#image-upload {
+  width: 300px;
+  position: relative;
+  left: 50px;
+}
+
+/* #display-image {
+  width: 400px;
+  height: 250px;
+  position: relative;
+  left: 10px;
+
+  border: 2px dashed #ece3e3;
+  background-size: cover;
+  background-position: center;
+  object-fit: contain;
+} */
+
+#submit-btn {
+  width: 150px;
+  padding: 10px;
+  position: relative;
+  left: 400px;
+  margin-top: 50px;
+
+  /* position: absolute;
+  top: 90px;
+  left: 175px; */
+
+  font-size: 16px;
+  border: 2px solid #f49f49;
+  background-color: #f49f49;
+  border-radius: 20px;
+  cursor: pointer;
+}
