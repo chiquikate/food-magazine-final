@@ -10,3 +10,8 @@ Version 1.2
 
 - Edited structuring of contents.
 - Added crud-functionalities (Add, Edit and Delete Recipe).
+
+Version 1.3
+
+- Added filter for categories functionality.
+- Added search for recipe name functionality.
