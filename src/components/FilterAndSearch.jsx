@@ -1,12 +1,7 @@
 import allJsonData from "../data.json";
 import "./Filter.css";
 
-function FilterAndSearch({
-  filteredRecipes,
-  setFilteredRecipes,
-  allRecipe,
-  setAllRecipe,
-}) {
+function FilterAndSearch({ setAllRecipe }) {
   const filterHandler = (itemData) => {
     const filterData =
       itemData === "All"
@@ -14,13 +9,6 @@ function FilterAndSearch({
         : allJsonData.filter((item) => item.category === itemData);
     setAllRecipe(filterData);
   };
-
-  // useEffect(() => {
-  //   setFilter(allRecipe);
-  //   setFilteredRecipes([
-  //     ...new Set(allRecipe.map((recipe) => recipe.category)),
-  //   ]);
-  // }, []);
 
   return (
     <>
@@ -60,41 +48,8 @@ function FilterAndSearch({
           </ul>
         </div>
       </div>
-      {/* <div className="result">
-        <Result filteredRecipes={filteredRecipes} />
-      </div> */}
     </>
   );
 }
-
-// function Result({ filteredRecipes }) {
-//   return (
-//     <>
-//       <div className="results">
-//         {filteredRecipes.map((element) => (
-//           <div className="recipe-container" key={element.id}>
-//             <div className="image-container">
-//               <NavLink to={`ingredients/${element.id}`}>
-//                 <img
-//                   src={element.image}
-//                   className="image"
-//                   alt="Asian Cuisine"
-//                   width="400px"
-//                   height="250px"
-//                 />
-//               </NavLink>
-//             </div>
-//             <div className="content">
-//               <NavLink to={`ingredients/${element.id}`}>
-//                 <h3 className="title">{element.title}</h3>
-//               </NavLink>
-//               <p className="description">{element.description}</p>
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-//     </>
-//   );
-// }
 
 export default FilterAndSearch;
