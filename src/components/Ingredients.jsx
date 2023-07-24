@@ -8,8 +8,8 @@ function Ingredients() {
 
   return (
     <>
-      <div class="ingredients-container">
-        <h2 class="heading">Ingredients</h2>
+      <div className="ingredients-container">
+        <h2 className="heading">Ingredients</h2>
         <div className="ingredient-list">
           <ul>
             {data?.ingredients.map((item) => {

@@ -1,0 +1,49 @@
+.search-filter-container {
+  margin: auto;
+  width: 300px;
+  position: relative;
+  top: 20px;
+}
+
+.search {
+  width: 500px;
+}
+
+.search-input {
+  font-size: 18px;
+  width: 200px;
+  height: 25px;
+
+  position: relative;
+  left: 0px;
+}
+
+.search-btn {
+  font-size: 16px;
+  position: absolute;
+  left: 210px;
+  top: 0px;
+}
+
+.listItem {
+  font-size: 16px;
+  list-style-type: none;
+  color: black;
+
+  text-align: center;
+  margin: 0;
+}
+
+.list {
+  position: relative;
+  top: -45px;
+  left: 5px;
+
+  background-color: white;
+  width: 190px;
+  padding: 0px;
+}
+
+.results {
+  margin-left: 100px;
+}

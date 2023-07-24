@@ -2,12 +2,18 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import data from "./data.json";
+import FilterAndSearch from "./components/FilterAndSearch";
+import Search from "./components/Search";
 
 import "./Root.css";
 
 function Root() {
   const [editRecipe, setEditRecipe] = useState();
   const [addRecipe, setAddRecipe] = useState([]);
+
+  const [filteredRecipes, setFilteredRecipes] = useState([]);
+
+  const [searchedItems, setSearchedItems] = useState([]);
 
   const [recipe, setRecipe] = useState([data]);
   const [allRecipe, setAllRecipe] = useState(data);
@@ -22,6 +28,17 @@ function Root() {
 
   return (
     <>
+      <Search
+        searchedItems={searchedItems}
+        setSearchedItems={setSearchedItems}
+        allRecipe={allRecipe}
+      />
+      <FilterAndSearch
+        setFilteredRecipes={setFilteredRecipes}
+        filteredRecipes={filteredRecipes}
+        allRecipe={allRecipe}
+        setAllRecipe={setAllRecipe}
+      />
       {/* <div className="add-content">
         <button className="add-btn" onClick={(e) => setAddRecipe(e)}>
           ADD RECIPE
@@ -43,7 +60,7 @@ function Root() {
                   />
                 </NavLink>
               </div>
-              <div class="content">
+              <div className="content">
                 <NavLink to={`ingredients/${element.id}`}>
                   <h3 className="title">{element.title}</h3>
                 </NavLink>
@@ -169,7 +186,6 @@ function AddRecipe({ allRecipe, setAllRecipe, recipe, setRecipe }) {
                 value={category}
                 onChange={getCategory}
               >
-                <br />
                 <option value="east-asia">East Asia</option>
                 <option value="southeast-asia">Southeast Asia</option>
                 <option value="south-asia">South Asia</option>
