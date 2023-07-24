@@ -32,6 +32,7 @@ function Root() {
         searchedItems={searchedItems}
         setSearchedItems={setSearchedItems}
         allRecipe={allRecipe}
+        setAllRecipe={setAllRecipe}
       />
       <FilterAndSearch
         setFilteredRecipes={setFilteredRecipes}
@@ -147,8 +148,6 @@ function AddRecipe({ allRecipe, setAllRecipe, recipe, setRecipe }) {
 
     setRecipe([...recipe, newRecipe]);
     setAllRecipe([...allRecipe, newRecipe]);
-
-    console.log(recipe);
 
     setTitle("");
     setCategory("");
@@ -268,18 +267,17 @@ function EditBlog({ editRecipe, setEditRecipe, allRecipe, setAllRecipe }) {
   };
 
   const saveHandle = (id) => {
-    const updateRecipe = allRecipe.find((e) => e.id === id);
-    if (updateRecipe) {
-      updateRecipe.title = editTitle;
-      updateRecipe.category = editCategory;
-      updateRecipe.description = editDescription;
-      updateRecipe.ingredients = editIngredients;
-    }
-
     const updatedRecipe = allRecipe.map((recipe) => {
       if (recipe.id === id) {
-        return updateRecipe;
+        return {
+          ...recipe,
+          title: editTitle,
+          category: editCategory,
+          description: editDescription,
+          editIngredients: editIngredients,
+        };
       }
+      return recipe;
     });
 
     setAllRecipe(updatedRecipe);

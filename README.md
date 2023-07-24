@@ -15,3 +15,8 @@ Version 1.3
 
 - Added filter for categories functionality.
 - Added search for recipe name functionality.
+
+<h1>Fixes</h1>
+
+- Fixed bugs on Save button under Edit functionality
+- Fixed bugs on Search functionality.
