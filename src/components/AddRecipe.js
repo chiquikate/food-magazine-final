@@ -117,7 +117,7 @@ function AddRecipe(props) {
                 required
               ></textarea>
               <br />
-              {/* <div class="image-upload-container">
+              {/* <div className="image-upload-container">
               <PostImage
                 addImageSuccessful={handleImageSuccess}
                 className="uploaded-image"
